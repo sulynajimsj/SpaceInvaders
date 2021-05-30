@@ -112,7 +112,7 @@ while game_running:
             keys_pressed2 = pygame.key.get_pressed()
             if keys_pressed2[pygame.K_ESCAPE]:
                 mixer.music.stop()
-                exec(open('Welcome.py').read())
+                game_running = False
             if event.key == pygame.K_LEFT:
                 changeX = -3
             elif event.key == pygame.K_RIGHT:
